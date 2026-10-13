@@ -1,0 +1,444 @@
+
+/* ===== SEPET SAYFASI ===== */
+
+.cart-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 70px 25px 100px;
+}
+
+.cart-page-heading {
+    margin-bottom: 40px;
+}
+
+.cart-eyebrow {
+    color: #9db78b;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.cart-page-heading h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 12px 0;
+}
+
+.cart-page-heading > p:last-child {
+    color: #b6c1b4;
+}
+
+/* Sol ürünler + sağ sipariş özeti */
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    gap: 30px;
+    align-items: start;
+}
+
+.cart-products,
+.order-summary {
+    background-color: #1d291e;
+    border: 1px solid #405140;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.cart-products h2,
+.order-summary h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.empty-message {
+    color: #aab8a8;
+    padding: 35px 0;
+}
+
+/* Tek bir sepet ürünü */
+
+.cart-product {
+    padding: 20px 0;
+    border-top: 1px solid #354537;
+}
+
+.cart-product h3 {
+    font-size: 18px;
+    color: #f0f0e9;
+    margin-bottom: 8px;
+}
+
+.cart-product-description {
+    font-size: 14px;
+    color: #b6c1b4;
+    margin-bottom: 12px;
+}
+
+.cart-product-price {
+    color: #a8c999;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.cart-shipping {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #263629;
+    color: #cbd8c4;
+    font-size: 13px;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.cart-quantity button {
+    padding: 8px 13px;
+    background-color: #344735;
+    color: white;
+    border: 1px solid #586d55;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cart-quantity .remove-product {
+    margin-left: auto;
+    color: #ffb7b7;
+}
+
+.cart-quantity button:hover {
+    background-color: #647f54;
+}
+
+/* Sipariş özeti */
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #bec9b8;
+}
+
+.summary-line strong {
+    color: #f0f0e9;
+}
+
+.grand-total {
+    border-top: 1px solid #405140;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.grand-total strong {
+    color: #b7dba8;
+}
+
+.demo-terms {
+    border-top: 1px solid #405140;
+    padding-top: 22px;
+    margin-top: 10px;
+}
+
+.demo-terms label {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.demo-terms input {
+    margin-top: 4px;
+    accent-color: #87a879;
+}
+
+.demo-terms p {
+    color: #9aab97;
+    font-size: 12px;
+    margin: 12px 0 20px;
+}
+
+.payment-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #647f54;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-button:hover:not(:disabled) {
+    background-color: #83a36f;
+}
+
+.payment-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.payment-disclaimer {
+    color: #91a28f;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* Hakkımızda ve alt bölüm */
+
+.cart-page-footer {
+    background-color: #0b100c;
+    border-top: 1px solid #354537;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+.cart-page-footer h2 {
+    color: #9db78b;
+    margin-bottom: 14px;
+}
+
+.cart-page-footer p {
+    color: #b6c1b4;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #a8c999;
+    text-decoration: none;
+}
+
+.cart-page-footer small {
+    color: #91a28f;
+}
+
+/* Mobil uyumluluk */
+
+@media (max-width: 800px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-page {
+        padding: 45px 15px 70px;
+    }
+
+    .cart-products,
+    .order-summary {
+        padding: 20px;
+    }
+}
+
+
+/* ===== DEMO ÖDEME PENCERESİ ===== */
+
+/* Pencere kapalıyken görünmez */
+.payment-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* JavaScript bu sınıfı ekleyince açılır */
+.payment-overlay.active {
+    display: flex;
+}
+
+/* Ödeme kutusu */
+.payment-modal {
+    width: 100%;
+    max-width: 460px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #1a271c;
+    border: 1px solid #526850;
+    border-radius: 16px;
+    padding: 25px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.payment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.payment-header h2 {
+    font-size: 23px;
+    color: #f0f0e9;
+}
+
+#odemeKapat {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.demo-warning {
+    background: #35412d;
+    color: #dfebd3;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Örnek kredi kartı */
+.demo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+
+    padding: 24px;
+    margin-bottom: 25px;
+    min-height: 170px;
+
+    background: linear-gradient(135deg, #485f42, #192a1d);
+    border: 1px solid #718e67;
+    border-radius: 14px;
+
+    color: #ffffff;
+}
+
+.demo-card > span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.demo-card strong {
+    font-size: clamp(17px, 5vw, 25px);
+    letter-spacing: 2px;
+}
+
+.demo-card > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+}
+
+/* Kart bilgisi alanları */
+.payment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #d3dfcf;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.payment-field input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+
+    background: #263529;
+    border: 1px solid #526850;
+    border-radius: 8px;
+
+    color: #f0f0e9;
+    font-size: 14px;
+}
+
+.payment-field input[readonly] {
+    cursor: default;
+}
+
+.payment-fields-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Onay butonları */
+.secure-button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+    background: #647f54;
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secure-button:hover {
+    background: #83a36f;
+}
+
+/* Temsili 3D Secure ekranı */
+.secure-screen {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.secure-screen[hidden] {
+    display: none;
+}
+
+.secure-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.secure-screen h3 {
+    color: #f0f0e9;
+    margin-bottom: 15px;
+}
+
+.secure-screen p {
+    color: #b6c1b4;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+    .payment-modal {
+        padding: 18px;
+    }
+
+    .payment-fields-row {
+        gap: 10px;
+    }
+}
+
+#kartBilgileri[hidden] {
+    display: none;
+}

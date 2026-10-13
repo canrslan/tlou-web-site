@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sepetim | LAST HAVEN </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sepet.css">
+    <script src="sepet.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+    <img src="logo.png" alt="Last Haven logosu" class="logo-img">
+
+    <span class="logo-text">
+        <span class="logo-green">LAST</span>
+        <span class="logo-white">HAVEN</span>
+    </span>
+</a>
+
+            <a href="index.html" class="back-link">
+                ← Mağazaya Dön
+            </a>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+
+        <div class="cart-page-heading">
+            <p class="cart-eyebrow">EKİPMAN LİSTESİ</p>
+            <h1>Alışveriş Sepetim</h1>
+            <p>
+                Yolculuğun için seçtiğin ekipmanları
+                buradan kontrol edebilirsin.
+            </p>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- SOL: ÜRÜNLER -->
+            <section class="cart-products">
+                <h2>Sepetindeki Ürünler</h2>
+
+                <div id="sepetUrunListesi">
+                    <p class="empty-message">
+                        Sepetin henüz boş.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SAĞ: SİPARİŞ ÖZETİ -->
+            <aside class="order-summary">
+                <h2>Sipariş Özeti</h2>
+
+                <div class="summary-line">
+                    <span>Ürün Adedi</span>
+                    <strong id="toplamAdet">0</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Ara Toplam</span>
+                    <strong id="araToplam">₺0</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Demo Kargo</span>
+                    <strong>Ücretsiz</strong>
+                </div>
+
+                <div class="summary-line grand-total">
+                    <span>Toplam Tutar</span>
+                    <strong id="genelToplam">₺0</strong>
+                </div>
+
+                <div class="demo-terms">
+                    <label>
+                        <input type="checkbox"
+                               id="kosullarKabul">
+
+                        <span>
+                            Demo kullanım koşullarını okudum
+                            ve kabul ediyorum.
+                        </span>
+                    </label>
+
+                    <p>
+                        Bu sitede gerçek ödeme, kargo ve
+                        sipariş işlemi yapılmamaktadır.
+                        Kişisel veri toplanmaz.
+                    </p>
+                </div>
+
+                <button id="odemeBtn"
+                        class="payment-button"
+                        type="button"
+                        disabled>
+                    Ödemeye Geç →
+                </button>
+
+                <p class="payment-disclaimer">
+                    Bu işlem yalnızca bir alışveriş simülasyonudur.
+                </p>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- HAKKIMIZDA -->
+    <footer class="cart-page-footer">
+
+        <h2>LAST HAVEN </h2>
+
+        <p>
+            Kıyamet sonrası dünyadan ilham alan
+            bağımsız ve kurgusal bir ekipman mağazası.
+            Bu web sitesi portfolyo amaçlı hazırlanmıştır.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html#hakkimizda">
+                Hakkımızda
+            </a>
+
+            <a href="index.html#hakkimizda">
+                Instagram / WhatsApp / Gmail
+            </a>
+        </div>
+
+        <small>© 2026 CAN ARSLAN — Demo proje</small>
+
+    </footer>
+
+<!-- DEMO ÖDEME PENCERESİ -->
+<div id="odemePenceresi"
+     class="payment-overlay"
+     aria-hidden="true">
+
+    <section class="payment-modal"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="odemeBaslik">
+
+        <div class="payment-header">
+            <h2 id="odemeBaslik">Güvenli Ödeme</h2>
+
+            <button id="odemeKapat"
+                    type="button"
+                    aria-label="Ödeme penceresini kapat">
+                ✕
+            </button>
+        </div>
+
+        <p class="demo-warning">
+            DEMO ÖDEME — Gerçek kart bilgisi girmeyiniz.
+        </p>
+
+        <!-- ÖRNEK KART -->
+        <div class="demo-card">
+            <span>ENDURE SUPPLY / DEMO CARD</span>
+            <strong>•••• •••• •••• 4242</strong>
+            <div>
+                <span>ÖRNEK KULLANICI</span>
+                <span>12/30</span>
+            </div>
+        </div>
+
+        <!-- KART BİLGİLERİ - YALNIZCA GÖSTERİM -->
+        <div id="kartBilgileri">
+
+            <label class="payment-field">
+                Kart Sahibinin Adı
+                <input type="text"
+                       value="ÖRNEK KULLANICI"
+                       readonly>
+            </label>
+
+            <label class="payment-field">
+                Kart Numarası
+                <input type="text"
+                       value="•••• •••• •••• 4242"
+                       readonly>
+            </label>
+
+            <div class="payment-fields-row">
+
+                <label class="payment-field">
+                    Son Kullanma Tarihi
+                    <input type="text"
+                           value="12/30"
+                           readonly>
+                </label>
+
+                <label class="payment-field">
+                    CVV
+                    <input type="text"
+                           value="•••"
+                           readonly>
+                </label>
+
+            </div>
+
+            <button id="secureBtn"
+                    class="secure-button"
+                    type="button">
+                🔒 3D Secure ile Öde
+            </button>
+
+        </div>
+
+        <!-- TEMSİLİ 3D SECURE EKRANI -->
+        <div id="secureEkrani"
+             class="secure-screen"
+             hidden>
+
+            <div class="secure-icon">🛡️</div>
+
+            <h3>Demo Güvenlik Doğrulaması</h3>
+
+            <p>
+                Bu ekran gerçek bir banka doğrulaması
+                değildir. İşlemi tamamlamak için
+                onayla butonuna basabilirsiniz.
+            </p>
+
+            <button id="odemeOnayla"
+                    class="secure-button"
+                    type="button">
+                Onayla
+            </button>
+
+        </div>
+
+    </section>
+</div>
+<div id="bildirim" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="bildirimMetni"></span>
+</div>
+
+
+
+</body>
+</html>

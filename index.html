@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TLOU | Survival Store</title>
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <!-- Mağaza logosu -->
+            <a href="index.html" class="logo">
+    <img src="logo.png" alt="Last Haven logosu" class="logo-img">
+
+    <span class="logo-text">
+        <span class="logo-green">LAST</span>
+        <span class="logo-white">HAVEN</span>
+    </span>
+</a>
+
+            <!-- Sayfa bağlantıları -->
+            <div class="nav-links">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#urunler">Ürünler</a>
+                <a href="#koleksiyon">Koleksiyonlar</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+            </div>
+
+            <!-- Sağdaki işlemler -->
+            <div class="nav-actions">
+                <button
+                    id="sepetBtn"
+                    class="cart-button"
+                    type="button"
+                    aria-label="Sepeti görüntüle">
+                    🛒 <span id="sepetSayisi">0</span>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ANA SAYFA -->
+    <main id="anasayfa">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    SURVIVAL COLLECTION / 2026
+                </p>
+
+                <h1>
+                    THE LAST
+                    <span>OF US ı-ıı</span>
+                </h1>
+
+                <p class="hero-description">
+                    The Last Of Us Part I ve II 
+                    Karakterlerinin Eşyaları 
+                </p>
+
+                <a href="#urunler" class="hero-button">
+                    Koleksiyonu Keşfet →
+                </a>
+
+            </div>
+            
+<!-- KARAKTER FOTOĞRAFLARI -->
+<div class="hero-characters">
+
+    <div class="character-photo">
+        <img src="images/ellie.jpg" alt="Ellie">
+        <span>ELLIE WİLLAMS</span>
+    </div>
+
+    <div class="character-photo">
+        <img src="images/joel.jpg" alt="Joel">
+        <span>JOEL MİLLER</span>
+    </div>
+
+    <div class="character-photo">
+        <img src="images/tommy.jpg" alt="Tommy">
+        <span>TOMMY MİİLER</span>
+    </div>
+
+</div>
+
+
+        </section>
+
+        <!-- ÜRÜNLER BÖLÜMÜ -->
+        <section id="urunler" class="products-section">
+
+    <div class="section-heading">
+        <p class="section-label">ÖNE ÇIKANLAR</p>
+        <h2>Öne Çıkan Ürünler</h2>
+        <p class="section-description">
+            Kıyamet sonrası dünyadan ilham alan özel parçalar.
+        </p>
+    </div>
+
+<!-- ÜRÜN ARAMA VE KATEGORİ FİLTRELERİ -->
+<div class="product-filters">
+
+    <!-- ARAMA KUTUSU -->
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="search"
+            id="urunArama"
+            placeholder="Ürün ara... Örn: Ellie"
+            aria-label="Ürün ara"
+        >
+    </div>
+
+    <!-- KATEGORİLER -->
+    <div class="category-filters">
+
+        <button class="filter-btn active"
+                data-category="all"
+                type="button">
+            Tümü
+        </button>
+
+        <button class="filter-btn"
+                data-category="canta"
+                type="button">
+            Çantalar
+        </button>
+
+        <button class="filter-btn"
+                data-category="saat"
+                type="button">
+            Saatler
+        </button>
+
+        <button class="filter-btn"
+                data-category="aksesuar"
+                type="button">
+            Aksesuarlar
+        </button>
+
+        <button class="filter-btn"
+                data-category="koleksiyon"
+                type="button">
+            Koleksiyon
+        </button>
+
+        <button class="filter-btn"
+                data-category="ekipman"
+                type="button">
+            Ekipmanlar
+        </button>
+
+
+    </div>
+
+    <p id="urunSonuc" class="product-results" role="status"></p>
+
+</div>
+
+    <div class="products-grid">
+
+        <!-- ÜRÜN 1 -->
+        <article class="product-card" data-category="canta">
+            <div class="product-image">
+                🎒
+            </div>
+
+            <div class="product-content">
+                <p class="product-category">Çanta</p>
+                <h3>Ellie Tarzı Sırt Çantası</h3>
+                <p class="product-text">
+                    Dayanıklı, sade ve yolculuk ruhunu taşıyan
+                    kıyamet sonrası tarzda sırt çantası.
+                </p>
+
+                <div class="product-bottom">
+                    <span class="product-price">₺1.299</span>
+                    <button class="add-to-cart-btn" type="button">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- ÜRÜN 2 -->
+        <article class="product-card" data-category="saat">
+            <div class="product-image">
+                ⌚
+            </div>
+
+            <div class="product-content">
+                <p class="product-category">Saat</p>
+                <h3>Joel İlhamlı Vintage Saat</h3>
+                <p class="product-text">
+                    Eskimiş deri kayış görünümüyle,
+                    geçmişin izlerini taşıyan klasik saat.
+                </p>
+
+                <div class="product-bottom">
+                    <span class="product-price">₺899</span>
+                    <button class="add-to-cart-btn" type="button">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- ÜRÜN 3 -->
+        <article class="product-card" data-category="Bileklik">
+            <div class="product-image">
+                🧵
+            </div>
+
+            <div class="product-content">
+                <p class="product-category">Aksesuar</p>
+                <h3>Ellie Moth Bileklik</h3>
+                <p class="product-text">
+                    İnce detaylara sahip, karakter ruhunu
+                    yansıtan sade ve anlamlı bir aksesuar.
+                </p>
+
+                <div class="product-bottom">
+                    <span class="product-price">₺349</span>
+                    <button class="add-to-cart-btn" type="button">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <!-- ÜRÜN 4 -->
+        <article class="product-card" data-category="Rozeti">
+            <div class="product-image">
+                🪲
+            </div>
+
+            <div class="product-content">
+                <p class="product-category">Koleksiyon</p>
+                <h3>Firefly Koleksiyon Rozeti</h3>
+                <p class="product-text">
+                    Hayatta kalma evreninden ilham alan,
+                    koleksiyon değeri taşıyan özel parça.
+                </p>
+
+                <div class="product-bottom">
+                    <span class="product-price">₺249</span>
+                    <button class="add-to-cart-btn" type="button">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </article>
+        
+<!-- ÜRÜN 5: EL FENERİ -->
+<article class="product-card" data-category="fener">
+    <div class="product-image">🔦</div>
+
+    <div class="product-content">
+        <p class="product-category">Ekipman</p>
+        <h3>Klasik Hayatta Kalma Feneri</h3>
+
+        <p class="product-text">
+            Eskitilmiş metal gövdesiyle dayanıklı
+            ve klasik görünümlü el feneri.
+        </p>
+
+        <div class="product-bottom">
+            <span class="product-price">₺449</span>
+
+            <button class="add-to-cart-btn" type="button">
+                Sepete Ekle
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- ÜRÜN 6: GÜNLÜK -->
+<article class="product-card" data-category="Gunluk">
+    <div class="product-image">📓</div>
+
+    <div class="product-content">
+        <p class="product-category">Aksesuar</p>
+        <h3>Ellie Tarzı Yolculuk Günlüğü</h3>
+
+        <p class="product-text">
+            Notlarınızı ve çizimlerinizi saklayabileceğiniz,
+            eskitilmiş kapaklı yolculuk defteri.
+        </p>
+
+        <div class="product-bottom">
+            <span class="product-price">₺299</span>
+
+            <button class="add-to-cart-btn" type="button">
+                Sepete Ekle
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- ÜRÜN 7: PUSULA -->
+<article class="product-card" data-category="Pusula">
+    <div class="product-image">🧭</div>
+
+    <div class="product-content">
+        <p class="product-category">Ekipman</p>
+        <h3>Tommy Tarzı Vintage Pusula</h3>
+
+        <p class="product-text">
+            Doğa keşiflerinden ilham alan,
+            antika görünümlü metal pusula.
+        </p>
+
+        <div class="product-bottom">
+            <span class="product-price">₺599</span>
+
+            <button class="add-to-cart-btn" type="button">
+                Sepete Ekle
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- ÜRÜN 8: MATARA -->
+<article class="product-card" data-category="matara">
+    <div class="product-image">🥤</div>
+
+    <div class="product-content">
+        <p class="product-category">Outdoor</p>
+        <h3>Jackson Kamp Matarası</h3>
+
+        <p class="product-text">
+            Askerî yeşil tasarımıyla doğa
+            yolculuklarından ilham alan matara.
+        </p>
+
+        <div class="product-bottom">
+            <span class="product-price">₺399</span>
+
+            <button class="add-to-cart-btn" type="button">
+                Sepete Ekle
+            </button>
+        </div>
+    </div>
+</article>
+
+
+    </div>
+
+</section>
+
+        <!-- KOLEKSİYONLAR BÖLÜMÜ -->
+        
+<!-- KOLEKSİYONLAR -->
+<section id="koleksiyon" class="collections-section">
+
+    <div class="collections-heading">
+        <p class="collections-label">ÖZEL EKİPMAN SETLERİ</p>
+        <h2>Koleksiyonlarımız</h2>
+        <p>Her yolculuğun kendine ait ekipmanları vardır.</p>
+    </div>
+
+    <div class="collections-grid">
+
+        <!-- ELLIE -->
+        <article class="collection-card">
+            <div class="collection-symbol">🎒</div>
+            <span class="collection-number">KOLEKSİYON 01</span>
+
+            <h3>Ellie Koleksiyonu</h3>
+            <p class="collection-description">
+                Uzun yolculuklara ve keşfe hazırlananlar için.
+            </p>
+
+            <ul class="collection-items">
+                <li>Sırt çantası</li>
+                <li>Bileklik</li>
+                <li>Not defteri</li>
+                <li>El feneri</li>
+            </ul>
+
+            <div class="collection-bottom">
+                <span class="collection-price">₺1.999</span>
+                <button class="collection-cart-btn"
+                        type="button"
+                        data-name="Ellie Koleksiyonu">
+                    Seti Sepete Ekle
+                </button>
+            </div>
+        </article>
+
+        <!-- JOEL -->
+        <article class="collection-card">
+            <div class="collection-symbol">⌚</div>
+            <span class="collection-number">KOLEKSİYON 02</span>
+
+            <h3>Joel Koleksiyonu</h3>
+            <p class="collection-description">
+                Dayanıklılığı ve klasik ekipmanları sevenler için.
+            </p>
+
+            <ul class="collection-items">
+                <li>Vintage saat</li>
+                <li>Omuz çantası</li>
+                <li>Pusula</li>
+                <li>El feneri</li>
+            </ul>
+
+            <div class="collection-bottom">
+                <span class="collection-price">₺2.499</span>
+                <button class="collection-cart-btn"
+                        type="button"
+                        data-name="Joel Koleksiyonu">
+                    Seti Sepete Ekle
+                </button>
+            </div>
+        </article>
+
+        <!-- TOMMY -->
+        <article class="collection-card">
+            <div class="collection-symbol">🧭</div>
+            <span class="collection-number">KOLEKSİYON 03</span>
+
+            <h3>Tommy Koleksiyonu</h3>
+            <p class="collection-description">
+                Doğada uzun süre vakit geçiren keşifçiler için.
+            </p>
+
+            <ul class="collection-items">
+                <li>Outdoor sırt çantası</li>
+                <li>Matara</li>
+                <li>Pusula</li>
+                <li>Kamp feneri</li>
+            </ul>
+
+            <div class="collection-bottom">
+                <span class="collection-price">₺2.199</span>
+                <button class="collection-cart-btn"
+                        type="button"
+                        data-name="Tommy Koleksiyonu">
+                    Seti Sepete Ekle
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="collections-disclaimer">
+        Bu ürünler ve fiyatlar portfolyo amaçlı kurgusal bir mağazaya aittir.
+    </p>
+
+</section>
+
+
+        <!-- HAKKIMIZDA BÖLÜMÜ -->
+        
+<!-- HAKKIMIZDA VE İLETİŞİM -->
+<section id="hakkimizda" class="about-section">
+
+    <div class="about-container">
+
+        <p class="about-label">BİZ KİMİZ?</p>
+
+        <h2>LAST<span>HAVEN</span></h2>
+
+        <p class="about-description">
+            Değişen bir dünyada, her eşyanın bir hikâyesi vardır.
+            LAST HAVEN; dayanıklılığı, keşfetme ruhunu ve
+            hayatta kalma estetiğini bir araya getiren
+             bir ekipman mağazasıdır.
+        </p>
+
+        <div class="store-address">
+            <h3>📍 Mağaza Konumu</h3>
+            <p>Arnvutköy, İstanbul, Türkiye</p>
+            <small>Portfolyo projesi için kurgusal konumdur.</small>
+        </div>
+
+        <div class="contact-area">
+            <h3>Bizimle İletişime Geç</h3>
+
+            <p>
+                Sorularınız ve iş birlikleri için
+                aşağıdaki bağlantıları kullanabilirsiniz.
+            </p>
+
+            
+<div class="contact-links">
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/ac.rsln/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-btn instagram-btn">
+
+        <i class="fa-brands fa-instagram"></i>
+        <span></span>
+
+    </a>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/905076780957"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-btn whatsapp-btn">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        <span></span>
+
+    </a>
+
+   
+<!-- E-POSTA -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=arslanby5757@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="contact-btn email-btn">
+
+    <i class="fa-solid fa-envelope"></i>
+    <span></span>
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+    </main>
+
+    <!-- ALT BİLGİ -->
+    <footer class="site-footer">
+
+        <p>
+            © 2026 CAN ARSLAN —
+            Portfolyo amaçlı demo mağaza.
+        </p>
+
+    </footer>
+
+    <!-- KÜÇÜK BİLDİRİM ALANI -->
+<div id="bildirim" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="bildirimMetni"></span>
+</div>
+
+</body>
+</html>
+
+    
