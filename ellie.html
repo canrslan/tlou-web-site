@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Williams | LAST HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .character-page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px 70px;
+            color: #f0f0e9;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #9db78b;
+            text-decoration: none;
+            margin-bottom: 25px;
+        }
+
+        .character-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .character-main-image {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 1px solid #344332;
+        }
+
+        .character-info h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            margin: 0 0 15px;
+            color: #9db78b;
+        }
+
+        .character-info p {
+            line-height: 1.8;
+            color: #c5c9c0;
+        }
+
+        .character-details {
+            margin-top: 25px;
+            padding: 18px;
+            background: #141c15;
+            border: 1px solid #344332;
+            border-radius: 10px;
+        }
+
+        .character-details p {
+            margin: 10px 0;
+        }
+
+        .gallery-title {
+            margin: 50px 0 20px;
+            color: #9db78b;
+        }
+
+        .character-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .character-gallery img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #344332;
+            transition: transform 0.25s, border-color 0.25s;
+        }
+
+        .character-gallery img:hover {
+            transform: translateY(-5px);
+            border-color: #9db78b;
+        }
+
+        .character-story {
+            margin-top: 45px;
+            padding: 25px;
+            background: #141c15;
+            border-radius: 12px;
+            border: 1px solid #344332;
+        }
+
+        .character-story h2 {
+            color: #9db78b;
+        }
+
+        .character-story p {
+            line-height: 1.9;
+            color: #c5c9c0;
+        }
+
+        @media (max-width: 700px) {
+            .character-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .character-main-image {
+                height: 400px;
+            }
+
+            .character-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .character-gallery img {
+                height: 200px;
+            }
+        }
+        
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+
+    background-color: #263326;
+    color: #c5d9b7;
+    border: 1px solid #9db78b;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 0 10px rgba(157, 183, 139, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #9db78b;
+    color: #101510;
+    box-shadow: 0 0 18px rgba(157, 183, 139, 0.5);
+    transform: translateY(-2px);
+}
+
+/* LAST HAVEN logo ve yazısı */
+.site-logo {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 9999;
+    background: #101510;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.site-logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.site-logo .logo-last {
+    color: #9db78b;
+}
+
+.site-logo .logo-haven {
+    color: #ffffff;
+}
+
+.site-logo:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 700px) {
+    .site-logo {
+        top: 12px;
+        right: 12px;
+        gap: 5px;
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .site-logo img {
+        width: 28px;
+        height: 28px;
+    }
+}
+.site-logo .logo-last {
+    color: #9db78b !important;
+}
+
+.site-logo .logo-haven {
+    color: #ffffff !important;
+}
+
+.site-logo img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.site-logo {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 9999;
+}
+
+
+.site-logo img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #9db78b;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+.site-logo .logo-last {
+    color: #9db78b !important;
+}
+
+.site-logo .logo-haven {
+    color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+    .site-logo {
+        top: 12px;
+        right: 12px;
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .site-logo img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+
+
+
+<a href="index.html" class="site-logo">
+    <img src="logo.png" alt="Last Haven Logo">
+    <span class="logo-last">LAST</span>
+    <span class="logo-haven">HAVEN</span>
+</a>
+
+
+
+
+
+    <main class="character-page">
+        <a href="index.html" class="back-link">← LAST HAVEN ana sayfa</a>
+
+        <section class="character-hero">
+            <img
+                src="images/ellie.jpg"
+                alt="Ellie Williams"
+                class="character-main-image"
+            >
+
+            <div class="character-info">
+                <h1>Ellie Williams</h1>
+                <p>
+                    Bir salgının şekillendirdiği dünyada büyüyen Ellie,
+                    cesareti, kararlılığı ve sevdiklerini koruma isteğiyle
+                    öne çıkar.
+                </p>
+
+                <div class="character-details">
+                    <p><strong>Doğum:</strong> 2019</p>
+                    <p><strong>Durum:</strong> Hayatta</p>
+                    <p><strong>İlk oyun:</strong> The Last of Us</p>
+                    <p><strong>Bağışıklık:</strong> Cordyceps enfeksiyonuna karşı bağışık</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="gallery-title">Ellie'nin Dünyası</h2>
+
+        <section class="character-gallery">
+            <img src="images/ellie-guitar.jpg" alt="Ellie gitarıyla">
+            <img src="images/ellie-seattle.jpg" alt="Ellie Seattle'da">
+            <img src="images/ellie-santa-barbara.jpg" alt="Ellie Santa Barbara'da">
+            <img src="images/ellie-portrait.jpg" alt="Ellie portresi">
+        </section>
+
+        
+<h2>Ellie'nin Hikâyesi</h2>
+
+<section class="character-story">
+    <p><strong>Uyarı: Bu biyografi The Last of Us Part I,
+    Left Behind ve Part II oyunlarının tamamı için spoiler içerir.</strong></p>
+
+    <h3>Çocukluğu ve bağışıklığı</h3>
+    <p>
+        Ellie Williams, Cordyceps salgınının dünyayı değiştirdiği bir dönemde,
+        2019 yılında doğmuştur. Boston'daki karantina bölgesinde büyümüş ve
+        FEDRA'nın askerî hazırlık okuluna gitmiştir. Sert bir dünyada yetişmesine
+        rağmen meraklı, alaycı, cesur ve mizah duygusunu koruyan bir karakterdir.
+    </p>
+    <p>
+        Hayatındaki en önemli kişilerden biri çocukluk arkadaşı Riley Abel'dır.
+        Left Behind hikâyesinde Ellie ve Riley birlikte zaman geçirirken enfekte
+        bir yaratığın saldırısına uğrar ve ikisi de ısırılır. Riley enfeksiyona
+        yenik düşerken Ellie hastalanmaz. Ellie böylece Cordyceps'e karşı
+        bağışıklığı olduğunu öğrenir. Riley'nin kaybı, Ellie'nin hayatındaki
+        ilk büyük travmalardan biridir.
+    </p>
+
+    <h3>Joel ile yolculuğu</h3>
+    <p>
+        Ellie 14 yaşındayken Marlene tarafından Joel Miller ve Tess'e emanet
+        edilir. İlk görev onu Boston karantina bölgesinden çıkarmaktır.
+        Ancak Ellie'nin bağışıklığının tedavi geliştirilmesine yardımcı
+        olabileceği düşünülünce yolculuk Amerika boyunca süren tehlikeli
+        bir göreve dönüşür.
+    </p>
+    <p>
+        Yolculuk sırasında Joel ve Ellie enfekte yaratıklarla, tehlikeli
+        insanlarla ve ağır kayıplarla karşılaşır. Başlangıçta birbirlerine
+        güvenmeyen ikili, yaşadıkları olaylar sayesinde güçlü bir bağ kurar.
+        Joel, kaybettiği kızı Sarah'ı hatırlatan Ellie'ye zamanla kendi kızı
+        gibi bağlanır. Ellie de Joel'i ailesi olarak görmeye başlar.
+    </p>
+
+    <h3>Hastanedeki karar ve büyük yalan</h3>
+    <p>
+        Salt Lake City'deki Ateşböcekleri hastanesinde Ellie'nin bağışıklığının
+        incelenmesi planlanır. Fakat ameliyatın Ellie'nin ölümüne yol açması
+        beklenmektedir. Joel, Ellie'yi kaybetmeyi göze alamaz ve hastaneye
+        saldırarak onu kurtarır. Ardından Ellie'ye tedavi geliştirme
+        çalışmalarının başarısız olduğunu söyler.
+    </p>
+    <p>
+        Ellie bu açıklamadan şüphe duysa da Joel'in yemin etmesini ister.
+        Joel gerçeği saklar. Bu olay, aralarındaki sevgiye rağmen ilişkilerinin
+        ilerleyen yıllarda zarar görmesine neden olur. Ateşböceklerinin
+        başarılı bir tedavi geliştirebileceği kesin olarak kanıtlanmamıştır.
+    </p>
+
+    <h3>Jackson'daki hayatı ve Joel'le yaşadığı kırgınlık</h3>
+    <p>
+        Ellie ve Joel, Wyoming'deki Jackson yerleşiminde daha güvenli bir
+        hayat kurar. Ellie devriye görevlerine katılır ve Dina ile romantik
+        bir ilişki geliştirir. Ancak Ellie, Joel'in hastanede yaşananlarla
+        ilgili yalan söylediğini öğrenince ona olan güveni sarsılır.
+        Aralarındaki bağ sürse de Ellie'nin içindeki kırgınlık tamamen
+        ortadan kalkmaz.
+    </p>
+
+    <h3>Joel'in ölümü ve intikam yolculuğu</h3>
+    <p>
+        The Last of Us Part II'de Ellie 19 yaşındadır. Joel, Abby Anderson
+        tarafından öldürülür. Abby'nin babası, ilk oyunun sonunda Joel'in
+        öldürdüğü cerrahlardan biridir. Joel'in ölümü Ellie'yi derinden
+        sarsar ve Ellie, Abby'yi bulup intikam almak için Seattle'a gider.
+    </p>
+    <p>
+        Seattle'da Ellie, Abby'nin çevresindeki insanlarla karşılaşır.
+        İntikam arayışı sırasında Nora, Owen ve Mel gibi karakterlerin
+        ölümüyle sonuçlanan olaylara karışır. Yaptıkları, Ellie'nin
+        suçluluk duymasına ve intikam uğruna ne kadar ileri gittiğini
+        sorgulamasına neden olur. Abby ile ilk yüzleşmesinde Ellie'nin
+        hayatı bağışlanır.
+    </p>
+
+    <h3>Çiftlik evi ve Santa Barbara</h3>
+    <p>
+        Ellie, Dina ve JJ ile çiftlik evinde yaşamaya başlasa da Joel'in
+        ölümüyle ilgili travmasını geride bırakamaz. Abby'nin Santa Barbara'da
+        olduğunu öğrenince Dina'nın kalması yönündeki isteğine rağmen yeniden
+        yola çıkar. Burada Abby ile son bir kez karşılaşır.
+    </p>
+    <p>
+        Dövüş sırasında Abby, Ellie'nin iki parmağını ısırarak koparır.
+        Ellie, Abby'yi öldürmek üzereyken onu bırakır. Bu karar, Ellie'nin
+        intikam döngüsünü sürdürmekten vazgeçtiği şeklinde yorumlanabilir.
+        Ancak yaşadığı kayıplar geri alınamaz.
+    </p>
+
+    <h3>Sonu ve Joel'in hatırası</h3>
+    <p>
+        Ellie çiftlik evine döndüğünde Dina ve JJ'nin ayrıldığını görür.
+        Joel'in kendisine öğrettiği gitarı çalmaya çalışır fakat kaybettiği
+        parmakları nedeniyle bunu eskisi gibi yapamaz. Gitarı geride bırakıp
+        evden ayrılır.
+    </p>
+    <p>
+        Oyunun finalinde Ellie'nin nereye gittiği açıklanmaz. Dina ile
+        yeniden bir araya gelip gelmediği de kesin değildir. Ellie hayattadır,
+        ancak intikam yolculuğu ona Joel'i, ilişkisini, parmaklarını ve
+        eski hayatının bir bölümünü kaybettirmiştir. Joel'le yaptığı son
+        konuşmayı hatırlaması, onun geçmişiyle farklı bir şekilde yüzleşmeye
+        başlamış olabileceğini düşündürür.
+    </p>
+</section>
+
+    </main>
+
+</body>
+</html>
+
+

@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Miller | LAST HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .character-page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 35px 20px;
+            color: #e5e5e5;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            margin-bottom: 25px;
+            background-color: #263326;
+            color: #c5d9b7;
+            border: 1px solid #9db78b;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(157, 183, 139, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #9db78b;
+            color: #101510;
+            box-shadow: 0 0 18px rgba(157, 183, 139, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .character-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .character-main-image {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .character-info h1 {
+            color: #9db78b;
+            font-size: 42px;
+            margin-top: 0;
+        }
+
+        .character-details,
+        .character-story {
+            background: #141c15;
+            border: 1px solid #29382a;
+            padding: 22px;
+            border-radius: 12px;
+            line-height: 1.8;
+        }
+
+        .character-details strong {
+            color: #9db78b;
+        }
+
+        .character-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 35px 0;
+        }
+
+        .character-gallery img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .character-gallery img:hover {
+            transform: scale(1.04);
+        }
+
+        .character-page h2 {
+            color: #9db78b;
+        }
+
+        @media (max-width: 700px) {
+            .character-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .character-main-image {
+                height: 380px;
+            }
+
+            .character-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .character-info h1 {
+                font-size: 34px;
+            }
+        }
+        
+.site-logo {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 9999;
+}
+
+
+.site-logo img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #9db78b;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+.site-logo .logo-last {
+    color: #9db78b !important;
+}
+
+.site-logo .logo-haven {
+    color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+    .site-logo {
+        top: 12px;
+        right: 12px;
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .site-logo img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <main class="character-page">
+
+        
+<a href="index.html" class="site-logo">
+    <img src="logo.png" alt="Last Haven Logo">
+    <span class="logo-last">LAST</span>
+    <span class="logo-haven">HAVEN</span>
+</a>
+
+
+        <section class="character-hero">
+            <img
+                src="images/joel.jpg"
+                alt="Joel Miller"
+                class="character-main-image"
+            >
+
+            <div class="character-info">
+                <h1>Joel Miller</h1>
+
+                <div class="character-details">
+                    <p><strong>Adı:</strong> Joel Miller</p>
+                    <p><strong>Mesleği:</strong> Kaçakçı ve hayatta kalan</p>
+                    <p><strong>Doğum yılı:</strong> Yaklaşık 1981</p>
+                    <p><strong>Durumu:</strong> Öldü</p>
+                    <p><strong>Ölüm:</strong> The Last of Us Part II</p>
+                </div>
+            </div>
+        </section>
+
+        <h2>Fotoğraf Galerisi</h2>
+
+        <section class="character-gallery">
+            <img src="images/joel-guitar.jpg" alt="Joel gitar çalarken">
+            <img src="images/joel-ellie.jpg" alt="Joel ve Ellie">
+            <img src="images/joel-survivor.jpg" alt="Joel hayatta kalma mücadelesinde">
+            <img src="images/joel-portrait.jpg" alt="Joel portresi">
+        </section>
+
+        
+<h2>Joel'in Hikâyesi</h2>
+
+<section class="character-story">
+    <p><strong>Uyarı: Bu biyografi The Last of Us Part I ve Part II
+    oyunlarının tamamı için spoiler içerir.</strong></p>
+
+    <h3>Salgın Öncesi Hayatı</h3>
+    <p>
+        Joel Miller, Teksas'ta büyümüş, kızı Sarah'ı tek başına yetiştiren
+        bir babadır. Salgın öncesinde çalışarak ailesine bakar ve gitar
+        çalmayı sever. Sarah ile kurduğu sevgi dolu ilişki, onun karakterinin
+        en önemli parçasıdır.
+    </p>
+
+    <h3>Sarah'nın Kaybı</h3>
+    <p>
+        Cordyceps salgını başladığında Joel, Sarah ve kardeşi Tommy ile
+        birlikte kaçmaya çalışır. Kaos sırasında bir asker onlara ateş açar
+        ve Sarah ölümcül şekilde yaralanır. Joel, kızını kollarında kaybeder.
+        Bu olay onun hayatını sonsuza dek değiştirir; yıllar boyunca duygusal
+        bağlardan kaçınan, sert ve kuşkucu bir hayatta kalana dönüşür.
+    </p>
+
+    <h3>Salgından Sonraki Yıllar</h3>
+    <p>
+        Salgından sonraki yirmi yıl boyunca Joel, hayatta kalabilmek için
+        karanlık işlere karışır ve Boston'da kaçakçılık yapar. Tess ile
+        birlikte çalışır ve karantina bölgesinin tehlikeli düzeninde yaşamını
+        sürdürür. Geçmişte neler yaptığına ilişkin tüm ayrıntılar bilinmese
+        de Joel, hayatta kalmak uğruna ağır bedeller ödediğini kabul eder.
+    </p>
+
+    <h3>Ellie ile Tanışması</h3>
+    <p>
+        Joel'in hayatı, Ellie Williams'ı Boston'dan çıkarmakla görevlendirilmesi
+        üzerine değişmeye başlar. Ellie'nin Cordyceps'e karşı bağışıklığı
+        bulunduğu anlaşılınca yolculuk insanlık için önemli bir göreve dönüşür.
+        Joel başlangıçta Ellie'ye mesafeli yaklaşır; fakat yolculuk boyunca
+        yaşadıkları tehlikeler ve kayıplar onları birbirine yakınlaştırır.
+    </p>
+
+    <h3>Bir Baba-Kız Bağı</h3>
+    <p>
+        Tess'in ölümü, Henry ve Sam'in trajedisi ve Ellie'nin David'in
+        grubundan kurtulması, Joel'in Ellie'ye duyduğu bağlılığı güçlendirir.
+        Joel ağır yaralandığında Ellie onu hayatta tutmak için mücadele eder.
+        Zamanla Joel, Ellie'yi kendi kızı gibi görmeye başlar. Ellie de Joel'i
+        ailesi olarak benimser.
+    </p>
+
+    <h3>Ateşböcekleri Hastanesi</h3>
+    <p>
+        Salt Lake City'de Ateşböcekleri, Ellie'nin bağışıklığını inceleyerek
+        bir tedavi geliştirmeyi umar. Planlanan ameliyat Ellie'nin ölümüne
+        neden olabileceği için Joel hastaneye saldırır ve onu kurtarır.
+        Ardından Ellie'ye tedavi geliştirme çalışmalarının başarısız olduğunu
+        söyleyerek gerçeği saklar.
+    </p>
+    <p>
+        Joel'in kararı, Ellie'ye duyduğu sevginin yanı sıra kendi kayıp
+        korkusunu da yansıtır. Ancak Ellie'nin hayatı hakkında kendi başına
+        karar verme hakkı ve insanlığın tedavi bulma ihtimali açısından
+        ağır sonuçlar doğurabilecek bir seçimdir.
+    </p>
+
+    <h3>Jackson'daki Yeni Hayatı</h3>
+    <p>
+        Joel ve Ellie, Tommy'nin yaşadığı Jackson yerleşimine yerleşir.
+        Joel burada daha sakin bir yaşam kurar ve Ellie'ye gitar çalmayı
+        öğretir. Onu doğum gününde terk edilmiş bir müzeye götürmesi,
+        aralarındaki sevgi dolu ilişkinin önemli anlarından biridir.
+    </p>
+    <p>
+        Ellie, Joel'in hastanede yaşananlarla ilgili yalanını öğrendiğinde
+        aralarındaki güven sarsılır. Birbirlerini sevmeye devam etseler de
+        Ellie'nin gerçeği öğrenmesi ilişkilerinde derin bir kırılma yaratır.
+    </p>
+
+    <h3>Abby ve Joel'in Ölümü</h3>
+    <p>
+        The Last of Us Part II'de Joel ve Tommy, devriye sırasında Abby
+        Anderson'ı enfekte yaratıklardan kurtarır. Abby, Joel'i geçmişte
+        babası Jerry Anderson'ı öldürdüğü için aramaktadır. Jerry, ilk oyunun
+        sonunda Ellie üzerinde ameliyat yapmayı planlayan cerrahtır.
+    </p>
+    <p>
+        Abby ve grubu Joel ile Tommy'yi kendi üslerine götürür. Abby, Joel'i
+        öldürür. Ellie olay yerine ulaştığında onu kurtaramaz. Joel'in ölümü,
+        Ellie'nin intikam yolculuğunun başlangıcı olur.
+    </p>
+
+    <h3>Joel'in Mirası</h3>
+    <p>
+        Joel kusursuz bir kahraman değildir. Geçmişte yaptığı seçimler
+        başkalarına zarar vermiştir ve Ellie'yi kurtarmak için aldığı karar
+        da tartışmalıdır. Buna rağmen Ellie ile kurduğu ilişki, onun kayıptan
+        sonra yeniden sevgi ve aile duygusunu keşfetmesini sağlar.
+    </p>
+    <p>
+        Joel'in Ellie'ye öğrettiği gitar, aralarındaki bağın simgesine dönüşür.
+        Onun ölümü Ellie'nin hayatında derin bir boşluk bırakır ve Part II'nin
+        ana hikâyesini şekillendirir.
+    </p>
+</section>
+
+
+    </main>
+</body>
+</html>

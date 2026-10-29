@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Miller | LAST HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .character-page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 35px 20px;
+            color: #e5e5e5;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            margin-bottom: 25px;
+            background-color: #263326;
+            color: #c5d9b7;
+            border: 1px solid #9db78b;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(157, 183, 139, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #9db78b;
+            color: #101510;
+            box-shadow: 0 0 18px rgba(157, 183, 139, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .character-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .character-main-image {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .character-info h1 {
+            color: #9db78b;
+            font-size: 42px;
+            margin-top: 0;
+        }
+
+        .character-details,
+        .character-story {
+            background: #141c15;
+            border: 1px solid #29382a;
+            padding: 22px;
+            border-radius: 12px;
+            line-height: 1.8;
+        }
+
+        .character-details strong {
+            color: #9db78b;
+        }
+
+        .character-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 35px 0;
+        }
+
+        .character-gallery img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .character-gallery img:hover {
+            transform: scale(1.04);
+        }
+
+        .character-page h2 {
+            color: #9db78b;
+        }
+
+        @media (max-width: 700px) {
+            .character-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .character-main-image {
+                height: 380px;
+            }
+
+            .character-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .character-info h1 {
+                font-size: 34px;
+            }
+        }
+        
+.site-logo {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 9999;
+}
+
+
+.site-logo img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #9db78b;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+.site-logo .logo-last {
+    color: #9db78b !important;
+}
+
+.site-logo .logo-haven {
+    color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+    .site-logo {
+        top: 12px;
+        right: 12px;
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .site-logo img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <main class="character-page">
+
+        <a href="index.html" class="back-link">
+            ← LAST HAVEN'a Geri Dön
+        </a>
+
+       
+<a href="index.html" class="site-logo">
+    <img src="logo.png" alt="Last Haven Logo">
+    <span class="logo-last">LAST</span>
+    <span class="logo-haven">HAVEN</span>
+</a>
+
+
+            <div class="character-info">
+                <h1>Tommy Miller</h1>
+
+                <div class="character-details">
+                    <p><strong>Adı:</strong> Tommy Miller</p>
+                    <p><strong>Yakınları:</strong> Joel Miller, Maria</p>
+                    <p><strong>Mesleği:</strong> Devriye görevlisi ve hayatta kalan</p>
+                    <p><strong>Yaşadığı yer:</strong> Jackson</p>
+                    <p><strong>Durumu:</strong> Hayatta</p>
+                </div>
+            </div>
+        </section>
+
+        <h2>Fotoğraf Galerisi</h2>
+
+        <section class="character-gallery">
+            <img src="images/tommy-portrait.jpg" alt="Tommy Miller portresi">
+            <img src="images/tommy-jackson.jpg" alt="Tommy Jackson yerleşiminde">
+            <img src="images/tommy-sniper.jpg" alt="Tommy tüfeğiyle">
+            <img src="images/tommy-ellie.jpg" alt="Tommy ve Ellie">
+        </section>
+
+        
+<h2>Tommy'nin Hikâyesi</h2>
+
+<section class="character-story">
+
+    <h3>1. Salgın Öncesindeki Hayatı</h3>
+    <p>
+        Tommy Miller, Joel Miller'ın küçük kardeşidir. İkisi de
+        Teksas'ta büyümüş ve yetişkinliklerinde inşaat sektöründe
+        çalışmıştır. Tommy, Joel'in kızı Sarah'nın amcasıdır ve
+        salgından önce ailesiyle yakın bir ilişkiye sahiptir.
+        Joel'in hayatındaki en önemli insanlardan biri olan Tommy,
+        onunla birlikte sıradan bir yaşam sürerken dünyanın
+        tamamen değişeceğinden habersizdir.
+    </p>
+
+    <h3>2. Salgının Başladığı Gün</h3>
+    <p>
+        Cordyceps salgını başladığında Tommy, Joel ve Sarah'nın
+        şehirden kaçmasına yardım eder. Üçü arabayla güvenli bir
+        yer bulmaya çalışırken yolları askerlerle kesişir.
+        Kaçış sırasında Sarah ağır yaralanır. Joel kızını
+        kucağında taşırken bir asker onlara ateş açar.
+        Tommy, Joel ve Sarah'yı kurtarmaya çalışsa da Sarah'nın
+        hayatını kaybetmesine engel olamaz.
+    </p>
+    <p>
+        Sarah'nın ölümü Joel'i derinden yaralar. Tommy de aynı
+        felaketin içinden geçerek hayatta kalmaya çalışır.
+        İki kardeş, salgından sonraki yıllarda birlikte hareket
+        eder; ancak hayatta kalmak için benimsedikleri yöntemler
+        ve dünyaya bakışları zamanla aralarındaki ilişkiyi
+        zorlaştırır.
+    </p>
+
+    <h3>3. Joel ile Yollarının Ayrılması</h3>
+    <p>
+        Salgından sonraki yıllarda Tommy ve Joel, tehlikelerle
+        dolu bir dünyada hayatta kalabilmek için birçok zor
+        karar verir. Ancak Tommy, yalnızca hayatta kalmaya
+        çalışmanın ötesinde bir amaç arar. Bu nedenle, salgın
+        sonrasında düzeni yeniden kurmayı hedefleyen Fireflies
+        adlı örgüte katılır.
+    </p>
+    <p>
+        Joel ile Tommy'nin düşünceleri arasındaki farklılıklar
+        zamanla büyür ve iki kardeşin yolları ayrılır.
+        Tommy, Fireflies'ın amaçlarına bir süre bağlı kalsa da
+        sonunda örgütten uzaklaşır. Yıllar boyunca yaşadığı
+        olaylar, onun dünyayı değiştirme düşüncesini yeniden
+        değerlendirmesine neden olur.
+    </p>
+
+    <h3>4. Maria ve Jackson Topluluğu</h3>
+    <p>
+        Tommy sonunda Wyoming'deki Jackson yerleşimine ulaşır.
+        Burada Maria ile tanışır, ona âşık olur ve onunla
+        evlenir. Maria ve yerleşimdeki diğer insanlar,
+        dış dünyadaki tehlikelere rağmen insanların daha
+        güvenli ve düzenli bir hayat yaşayabileceği bir
+        topluluk oluşturmuştur.
+    </p>
+    <p>
+        Jackson, Tommy için yalnızca bir sığınak değildir.
+        Burası, geçmişte yaşadığı şiddet ve kayıpların ardından
+        yeniden bir hayat kurabileceği bir yerdir. Tommy,
+        topluluğun güvenliği ve devamlılığı için çalışır.
+        Eski hayatındaki çatışmalardan uzaklaşarak ailesine
+        ve yaşadığı topluluğa önem vermeye başlar.
+    </p>
+
+    <h3>5. Joel ile Yeniden Buluşması</h3>
+    <p>
+        The Last of Us Part I sırasında Joel, Ellie ile birlikte
+        Tommy'yi bulmak için Jackson'a doğru yol alır.
+        Ellie'nin bağışıklığı, yolculuğun asıl amacını
+        oluşturur; Joel, onu Fireflies'a ulaştırmak için
+        Tommy'nin yardımına ihtiyaç duyar.
+    </p>
+    <p>
+        İki kardeş yıllar sonra yeniden bir araya gelir.
+        Ancak aralarındaki bağ, geçmişte yaşananların izlerini
+        taşımaktadır. Tommy, Joel'in Ellie'yi koruma konusunda
+        ne kadar ileri gidebileceğini görür. Joel başlangıçta
+        Ellie'yi Tommy'ye emanet etmek ister; çünkü yolculuğa
+        devam etmenin kendisi için giderek daha zor hâle
+        geldiğini düşünür.
+    </p>
+    <p>
+        Tommy, Ellie'yi teslim almayı kabul etse de Joel ile
+        Ellie arasındaki ilişkinin ne kadar güçlü olduğunu
+        fark eder. Sonunda Joel yolculuğa kendisi devam etmeye
+        karar verir. Tommy ise Jackson'da kalır. Böylece Tommy,
+        ilk oyunun ana yolculuğunda önemli bir rol oynasa da
+        hikâyenin geri kalanında çoğunlukla arka planda kalır.
+    </p>
+
+    <h3>6. Joel'in Ölümü</h3>
+    <p>
+        The Last of Us Part II başladığında Tommy, Joel ve
+        Ellie Jackson'da yaşamlarını sürdürmektedir. Joel ile
+        Tommy devriye görevlerine çıkar. Ancak bir görev
+        sırasında Abby Anderson ve onun grubuyla karşılaşırlar.
+        Olaylar kısa sürede kontrolden çıkar ve Abby, Joel'i
+        öldürür.
+    </p>
+    <p>
+        Tommy de Abby'nin grubunun eline düşer. Grup onu ve
+        Ellie'yi hayatta bırakır; ancak Joel'in ölümü Tommy
+        üzerinde ağır bir etki yaratır. Kardeşini kaybetmenin
+        acısı, onun geçmişte geride bırakmaya çalıştığı şiddet
+        dolu dünyaya yeniden dönmesine neden olur.
+    </p>
+
+    <h3>7. Seattle'da İntikam Arayışı</h3>
+    <p>
+        Tommy, Joel'in ölümünün ardından Abby ve onun grubunu
+        bulmak amacıyla Seattle'a gider. Ellie'nin de aynı
+        şeyi yapmaya kararlı olduğunu bilse de kendi yolunu
+        izler. Seattle'da Abby'nin bağlantılı olduğu
+        Washington Liberation Front (WLF) üyelerini takip
+        eder ve onlardan bilgi almaya çalışır.
+    </p>
+    <p>
+        Tommy'nin iz sürme ve keskin nişancılık becerileri,
+        onu tehlikeli bir rakip hâline getirir. Abby'nin
+        arkadaşlarından bazılarını öldürür ve grubun peşine
+        düşer. Ancak intikam arayışı, onu da giderek daha
+        fazla tehlikenin içine çeker. Bir zamanlar Jackson'da
+        kurduğu sakin hayat, yerini yeniden şiddet ve kayıp
+        korkusuna bırakır.
+    </p>
+
+    <h3>8. Abby ile Karşılaşması ve Ağır Yaralanması</h3>
+    <p>
+        Seattle'daki çatışmalar sırasında Tommy, Abby ve
+        arkadaşlarıyla yeniden karşı karşıya gelir. Yaşanan
+        mücadelelerde ağır tehlikeler atlatır; bir noktada
+        Yara tarafından yaralanıp suya düşer. Buna rağmen
+        hayatta kalmayı başarır ve Ellie ile diğerlerine
+        yeniden ulaşır.
+    </p>
+    <p>
+        Daha sonra Abby, Ellie ve arkadaşlarının bulunduğu
+        tiyatroya gelir. Çıkan çatışmada Jesse hayatını
+        kaybederken Tommy de vurulur. Tommy'nin başından
+        vurulması ve aldığı diğer yaralar onun hayatını
+        tamamen değiştirir. Hayatta kalır, ancak bir gözündeki
+        görme yetisini kaybeder ve yürümekte zorlanmaya başlar.
+    </p>
+
+    <h3>9. Jackson'a Dönüş ve Değişen Tommy</h3>
+    <p>
+        Tommy, yaşadığı ağır yaralanmaların ardından Jackson'a
+        döner. Ancak fiziksel yaraları kadar yaşadığı kayıplar
+        da onu değiştirmiştir. Maria ile arasındaki ilişki
+        bozulur ve eskiden sahip olduğu yaşamın büyük bölümü
+        artık geride kalmıştır.
+    </p>
+    <p>
+        Bir süre sonra Tommy, Ellie ile Dina'nın yaşadığı
+        çiftliğe gider. Abby'nin yerini öğrendiğini söyler ve
+        Ellie'den intikamı tamamlamasını ister. Tommy için
+        Joel'in ölümünün hesabını sormak hâlâ önemlidir.
+        Ancak Ellie artık farklı bir hayat kurmaya çalışmakta
+        ve intikamın kendisinden götürdükleriyle yüzleşmektedir.
+    </p>
+    <p>
+        Ellie'nin yeniden yola çıkmak istememesi, Tommy'yi
+        öfkelendirir. Aralarındaki tartışma, Joel'in ölümünden
+        sonra ikisinin de yaşadığı acıyla nasıl farklı
+        biçimlerde baş etmeye çalıştığını gösterir. Tommy,
+        bir zamanlar Ellie'yi korumaya çalışan kişi olmasına
+        rağmen artık ondan kendi intikam arayışını sürdürmesini
+        beklemektedir.
+    </p>
+
+    <h3>10. Tommy'nin Hikâyesinin Anlamı</h3>
+    <p>
+        Tommy'nin hikâyesi, intikamın yalnızca hedef alınan
+        kişilerin hayatını değil, intikam peşinden giden
+        insanların kendi hayatlarını da nasıl değiştirdiğini
+        gösterir. Jackson'da bir aile ve topluluk kurarak
+        geçmişinden uzaklaşmaya çalışan Tommy, Joel'in ölümüyle
+        yeniden şiddetin içine sürüklenir.
+    </p>
+    <p>
+        The Last of Us Part II'nin sonunda Tommy hayattadır;
+        ancak fiziksel durumu, Maria ile ilişkisi ve geleceği
+        belirsizdir. Oyun, onun sonraki hayatında neler
+        yaşadığını kesin olarak açıklamaz. Tommy'nin hikâyesi,
+        sevdiği insanları korumak isteyen bir adamın,
+        kayıplarının ve öfkesinin etkisiyle nasıl değişebildiğini
+        anlatır.
+    </p>
+
+</section>
+
+    </main>
+</body>
+</html>
+ 
