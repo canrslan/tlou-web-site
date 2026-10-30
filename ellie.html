@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellie Williams | LAST HAVEN</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .character-page {
@@ -261,13 +263,106 @@
         width: 28px;
         height: 28px;
     }
+    .site-footer {
+    padding: 30px 20px;
+
+    background-color: #0b100c;
+    border-top: 1px solid #2a352b;
+
+    color: #819080;
+    text-align: center;
+    font-size: 13px;
+}
 }
 
+
+
+
+store-address {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #1d291e;
+    border: 1px solid #344235;
+    border-radius: 12px;
+}
+
+.store-address h3 {
+    color: #e8e8df;
+    margin-bottom: 10px;
+}
+
+.store-address p {
+    color: #bfc8ba;
+}
+
+.store-address small {
+    display: block;
+    margin-top: 8px;
+    color: #91a28f;
+}
+
+/* İLETİŞİM */
+
+.contact-area {
+    padding: 30px;
+    background-color: #1d291e;
+    border: 1px solid #344235;
+    border-radius: 12px;
+}
+
+.contact-area h3 {
+    color: #f0f0e9;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-area > p {
+    color: #bfc8ba;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 24px;
+
+    color: #f0f0e9;
+    background-color: #334735;
+    border: 1px solid #526b50;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #658455;
+    border-color: #9db78b;
+    transform: translateY(-3px);
+}
+
+.contact-btn:focus-visible {
+    outline: 2px solid #b8e1a7;
+    outline-offset: 4px;
+}
 
 
     </style>
 </head>
 <body>
+
+
     
 
 
@@ -283,7 +378,7 @@
 
 
     <main class="character-page">
-        <a href="index.html" class="back-link">← LAST HAVEN ana sayfa</a>
+        <a href="index.html" class="back-link">← LAST HAVEN'a geri dön</a>
 
         <section class="character-hero">
             <img
@@ -301,15 +396,16 @@
                 </p>
 
                 <div class="character-details">
-                    <p><strong>Doğum:</strong> 2019</p>
-                    <p><strong>Durum:</strong> Hayatta</p>
-                    <p><strong>İlk oyun:</strong> The Last of Us</p>
-                    <p><strong>Bağışıklık:</strong> Cordyceps enfeksiyonuna karşı bağışık</p>
+                    <p><strong>Adı:</strong> Ellie Willams</p>
+                    <p><strong>Yakınları:</strong> Joel Miller(Baba), Dina(Sevgili)</p>
+                    <p><strong>Mesleği:</strong> Devriye görevlisi, Hayatta kalan</p>
+                    <p><strong>Yaşadığı yer:</strong> Jackson,Wyoming ABD </p>
+                    <p><strong>Durumu:</strong> Hayatta</p>
                 </div>
             </div>
         </section>
 
-        <h2 class="gallery-title">Ellie'nin Dünyası</h2>
+        <h2 class="gallery-title">Fotoğraf Galerisi </h2>
 
         <section class="character-gallery">
             <img src="images/ellie-guitar.jpg" alt="Ellie gitarıyla">
@@ -430,6 +526,96 @@
 </section>
 
     </main>
+                
+<!-- HAKKIMIZDA VE İLETİŞİM -->
+<section id="hakkimizda" class="about-section">
+
+    <div class="about-container">
+
+        <p class="about-label">BİZ KİMİZ?</p>
+
+        <h2>LAST<span>HAVEN</span></h2>
+
+        <p class="about-description">
+            Değişen bir dünyada, her eşyanın bir hikâyesi vardır.
+            LAST HAVEN; dayanıklılığı, keşfetme ruhunu ve
+            hayatta kalma estetiğini bir araya getiren
+             bir ekipman mağazasıdır.
+        </p>
+
+        <div class="store-address">
+            <h3>📍 Mağaza Konumu</h3>
+            <p>Arnvutköy, İstanbul, Türkiye</p>
+            <small>Portfolyo projesi için kurgusal konumdur.</small>
+        </div>
+
+        <div class="contact-area">
+            <h3>Bizimle İletişime Geç</h3>
+
+            <p>
+                Sorularınız ve iş birlikleri için
+                aşağıdaki bağlantıları kullanabilirsiniz.
+            </p>
+
+            
+<div class="contact-links">
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/ac.rsln/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-btn instagram-btn">
+
+        <i class="fa-brands fa-instagram"></i>
+        <span></span>
+
+    </a>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/905076780957"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-btn whatsapp-btn">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        <span></span>
+
+    </a>
+
+   
+<!-- E-POSTA -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=arslanby5757@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="contact-btn email-btn">
+
+    <i class="fa-solid fa-envelope"></i>
+    <span></span>
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+    </main>
+
+
+
+ <!-- ALT BİLGİ -->
+    <footer class="site-footer">
+
+        <p>
+            © 2026 CAN ARSLAN —
+            Portfolyo amaçlı demo mağaza.
+        </p>
+
+    </footer>
+
+
 
 </body>
 </html>
